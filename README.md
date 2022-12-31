@@ -3,7 +3,7 @@
 I saw the great example in [tensorflow probability](https://www.tensorflow.org/probability/examples/Gaussian_Process_Regression_In_TFP) on using Gaussian process, including assigning priors to GP hyperparameters, marginal likelihood estimation, and Hamiltonian Monte Carlo sampling of the hyperparameters.
 So I tried to see if I can modify it to my own problems.
 
-Below are some my example notebooks for practicing. Not all of them are highly annotated.
+Below are some my example notebooks for practicing. Not all of them are highly annotated. But if there's any question, please let me know.
 
 1. `01_Pk_Emulator`: An example of using TFP GPs on power spectrum emulation. The major difference here is we train a batch of independent GPs. So that we can predict vectorized output. The Automatic Relevance Determination is borrowed from TFP issue 248, but the current suggested way is probably using `FeatureScaled` kernel.
 2. `02_Lya_Emulator`: (working on it).
